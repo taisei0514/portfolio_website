@@ -1,3 +1,5 @@
+/* 全てのbodyタグに適用されるスタイルを指定 */
+/* Skill，Contactの一部に影響を及ぼす */
 body {
   font-family: "Lato","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
   font-size: 14px;
@@ -6,12 +8,15 @@ body {
   color: #333;
 }
 
+/* 全てのaタグに適用されるスタイルを指定 */
+/* Contactの一部（Twitter，Instagram）に影響を及ぼす */
 a {
   transition: opacity .3s;
   text-decoration: none;
   color: #1ca9e3;
 }
 
+/* 全てのimgタグに適用されるスタイルを指定 */
 img {
   max-width: 100%;
   height: auto;
@@ -19,6 +24,7 @@ img {
   border-style: none;
 }
 
+/* 全てのulまたはliタグに適用されるスタイルを指定 */
 ul,
 li {
   list-style: none;
@@ -35,10 +41,12 @@ li {
 /*--------------------------------
  レイアウト
 ---------------------------------*/
+/* section間の幅を指定 */
 .section {
   padding: 80px 0;
 }
 
+/* 全てのinnerタグに適用されるスタイルを指定 */
 .inner {
   max-width: 1340px;
   margin: 0 auto;
@@ -48,6 +56,7 @@ li {
 /*--------------------------------
  見出し
 ---------------------------------*/
+/* Works, Skill, Contactのスタイルを指定 */
 .title {
   font-size: 34px;
   font-weight: normal;
@@ -58,6 +67,7 @@ li {
   color: #737d6d;
 }
 
+/* お問い合わせとTwitterの行間のスタイルを指定 */
 .lead {
   margin-bottom: 30px;
   text-align: center;
@@ -66,6 +76,7 @@ li {
 /*--------------------------------
 ヘッダー
 ---------------------------------*/
+/* ヘッダー（スクロールして変化する部分）のスタイルを指定 */
 .header {
   position: fixed;
   top: 0;
@@ -74,10 +85,13 @@ li {
   transition: background-color .6s;
 }
 
+/* ヘッダーの色を指定 */
 .header.active {
-  background-color: #737d6d;
+  background-color: #5c90a5;
+  /* background-color: #4a8096; */
 }
 
+/* ヘッダーの文字を水平に表示するためのスタイルを指定 その1*/
 .header-inner {
   display: flex;
   align-items: center;
@@ -85,34 +99,40 @@ li {
   padding: 15px 20px;
 }
 
+/* Taisei's Portfolioのスタイルを指定 */
 .header-logo {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
   line-height: 1.2;
   margin-right: 20px;
   letter-spacing: .05em;
 }
 
+/* Taisei's Portfolioの色を指定 */
 .header-logo a {
   color: #fff;
 }
 
+/* ヘッダーの文字を水平に表示するためのスタイルを指定 その2*/
 .header-nav-list {
   display: flex;
   justify-content: space-between;
 }
 
+/* ヘッダーの文字（About, Works, Skill, Contact）の間隔のスタイルを指定 */
 .header-nav-item:not(:last-child) {
   margin-right: 20px;
 }
 
+/* ヘッダーの文字（About, Works, Skill, Contact）のスタイルを指定 */
 .header-nav-item a {
-  font-size: 13px;
+  font-size: 18px;
   padding: 5px 0;
   letter-spacing: .1em;
   color: #fff;
 }
 
+/* ヘッダーの文字（About, Works, Skill, Contact）にマウスが当てられた時のスタイルを指定 */
 .header-nav-item a:hover {
   opacity: .8;
 }
